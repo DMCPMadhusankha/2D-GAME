@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GRAVEYARD RUNNER </title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="llogo.jpg" />
+</head>
+
+<body onkeyup="key(event);" class="body">
+    <div id="background" class="background">
+        <div id="main" class="main"></div>
+        <img id="sprite" class="sprite" src="Idle (1).png" />
+        <button onclick="q();" class="btn">Restart</button>
+        <div id="scorebox" class="scorebox">
+            <p class="number" id="number">0</p>
+            <p1 class="score" id="score">score</p1>
+        </div>
+    </div>
+    <div id="end" class="end">
+        <div>game over</div>
+        <div>your score</div>
+        <div id="endscore">0</div>
+        <button onClick="r();" class="button">Play Again</button>
+    </div>
+    <div id="win" class="win">
+        <div>congratulations</div>
+        <div>your score</div>
+        <div id="endscore">300</div>
+        <button onClick="rq();" class="bttn">Play Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
