@@ -8,7 +8,7 @@
 .background {
     width: 100%;
     height: 100vh;
-    background-image: url("bbb.jpg");
+    background-image: url("./assets/images/bbb.jpg");
     background-size: contain;
     background-repeat: repeat-x;
     position: absolute;
@@ -23,7 +23,7 @@
     position: fixed;
     width: 150px;
     height: 150px;
-    background-image: url("gg.jpg");
+    background-image: url("./assets/images/gg.jpg");
     background-size: contain;
 }
 
@@ -51,7 +51,7 @@
 .skull {
     width: 100px;
     height: 200px;
-    background-image: url("skeletonee.gif");
+    background-image: url("./assets/images/skeletonee.gif");
     margin-top: 500px;
     position: absolute;
     background-size: contain;
@@ -60,7 +60,7 @@
 .end {
     position: absolute;
     visibility: hidden;
-    background-image: url("lost.jpg");
+    background-image: url("./assets/images/lost.jpg");
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -103,7 +103,7 @@
 .main {
     width: 100vw;
     height: 100vh;
-    background-image: url("welcome.jpg");
+    background-image: url("./assets/images/welcome.jpg");
     position: absolute;
     background-size: cover;
     visibility: visible;
@@ -124,7 +124,7 @@
 .win {
     position: absolute;
     visibility: hidden;
-    background-image: url("win.jpg");
+    background-image: url("./assets/images/win.jpg");
     display: flex;
     flex-direction: column;
     align-items: center;

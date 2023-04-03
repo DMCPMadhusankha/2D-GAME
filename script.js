@@ -1,12 +1,12 @@
-var runSoundClip = new Audio("run.wav");
-var backgroundSoundClip = new Audio("music.mp3");
-var wSoundClip = new Audio("wolf.wav");
-var jumpSoundClip = new Audio("jumpp.mp3");
-var painSoundClip = new Audio("pain.wav");
-var knifeSoundClip = new Audio("knife.mp3");
-var alertSoundClip = new Audio("alert.wav");
-var evilSoundClip = new Audio("evil.mp3");
-var winSoundClip = new Audio("cheer.wav");
+var runSoundClip = new Audio("./assets/sounds/run.wav");
+var backgroundSoundClip = new Audio("./assets/sounds/music.mp3");
+var wSoundClip = new Audio("./assets/sounds/wolf.wav");
+var jumpSoundClip = new Audio("./assets/sounds/jumpp.mp3");
+var painSoundClip = new Audio("./assets/sounds/pain.wav");
+var knifeSoundClip = new Audio("./assets/sounds/knife.mp3");
+var alertSoundClip = new Audio("./assets/sounds/alert.wav");
+var evilSoundClip = new Audio("./assets/sounds/evil.mp3");
+var winSoundClip = new Audio("./assets/sounds/cheer.wav");
 
 winSoundClip.loop = false;
 evilSoundClip.loop = false;
@@ -53,7 +53,7 @@ function run() {
     if (runImage == 11) {
         runImage = 1;
     }
-    document.getElementById("sprite").src = "Run (" + runImage + ").png";
+    document.getElementById("sprite").src = "./assets/images/Run (" + runImage + ").png";
 }
 
 var backgroundWorker = 0;
@@ -122,7 +122,7 @@ function jump() {
             boxWorker = setInterval(move, 100)
         }
     }
-    document.getElementById("sprite").src = "jumpAttack (" + jumpImage + ").png";
+    document.getElementById("sprite").src = "./assets/images/jumpAttack (" + jumpImage + ").png";
 }
 
 var boxId = 0;
@@ -153,7 +153,7 @@ function died() {
         document.getElementById("end").style.visibility = "visible";
         document.getElementById("endscore").innerHTML = sNumber;
     }
-    document.getElementById("sprite").src = "Dead (" + kill + ").png";
+    document.getElementById("sprite").src = "./assets/images/Dead (" + kill + ").png";
 
 }
 var boxWorker = 0;
